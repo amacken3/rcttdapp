@@ -24,8 +24,8 @@ function App() {
 
   return (
     <Router>
-      <div className="App">
-        <Navbar />
+      <Navbar />  {/* Navbar fixed at the top */}
+      <div className="content-container"> {/* Flexbox container to center the to-do list */}
         <Routes>
           <Route path="/login" element={<Login />} />
           <Route path="/" element={
